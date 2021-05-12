@@ -5,7 +5,7 @@ const serverSessionSecret = () => {
     if (
         !process.env.SERVER_SESSION_SECRET ||
         process.env.SERVER_SESSION_SECRET.length < 8 ||
-        process.env.SERVER_SESSION_SECRET === warning.badSecret
+        process.env.SERVER_SESSION_SECRET === warnings.badSecret
     ) {
         console.log(warnings.badSecret)
     }
